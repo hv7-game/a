@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://hv7-game.github.io/a/sitemap.xml
