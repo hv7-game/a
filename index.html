@@ -166,25 +166,41 @@
 <!-- Stylesheet -->
 <link rel="stylesheet" href="style.css">
   <!-- Mobile Horizontal Scroll & Large Image Fix -->
+<!-- Stylesheet -->
+<link rel="stylesheet" href="style.css">
+
+<!-- Mobile Image Fit & Smaller Emojis Fix -->
 <style>
   html, body {
-    max-width: 100%;
-    overflow-x: clip;
+    max-width: 100% !important;
+    overflow-x: clip !important;
   }
 
-  img, picture, svg, video {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .hero,
-  .hero .container,
-  .about-section,
-  .about-grid,
-  .hero-figure,
   .about-figure,
+  .about-figure picture,
+  .about-figure img,
+  .hero-figure,
+  .hero-figure picture,
+  .hero-figure img {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  .about-grid,
   .container {
-    max-width: 100%;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Emojis ko chhota karne ke liye */
+  .stat-icon,
+  .feature-icon {
+    font-size: 1.4rem !important;
+    line-height: 1.2 !important;
   }
 
   .specs-table {
@@ -194,6 +210,7 @@
     overflow-x: auto;
   }
 </style>
+</head>
 </head>
 <body>
 
