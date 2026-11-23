@@ -165,6 +165,35 @@
 
 <!-- Stylesheet -->
 <link rel="stylesheet" href="style.css">
+  <!-- Mobile Horizontal Scroll & Large Image Fix -->
+<style>
+  html, body {
+    max-width: 100%;
+    overflow-x: clip;
+  }
+
+  img, picture, svg, video {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .hero,
+  .hero .container,
+  .about-section,
+  .about-grid,
+  .hero-figure,
+  .about-figure,
+  .container {
+    max-width: 100%;
+  }
+
+  .specs-table {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    overflow-x: auto;
+  }
+</style>
 </head>
 <body>
 
